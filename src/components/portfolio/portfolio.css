@@ -1,0 +1,114 @@
+
+.portfolio__labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px auto;
+    width: auto;
+}
+
+.portfolio__labels a {
+    font-weight: 500;
+    color: var(--color-white);
+    margin: 5px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    width: auto;
+    border: 1px solid transparent;
+    border-color: var(--color-primary-variant);
+    background: var(--color-bg-variant);
+    transition: all ease 300ms;
+}
+
+.portfolio__labels a:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__labels a.active-category {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    transition: all ease 300ms;
+}
+
+.portfolio__labels a.active-category:hover {
+    background: transparent;
+    color: var(--color-white);
+}
+
+.portfolio__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.portfolio__item {
+    flex-basis: 20%;
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 0 0;
+}
+
+.portfolio__item p {
+    color: var(--color-light);
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+.portfolio__item p span {
+    color: var(--color-primary-variant);
+}
+
+.portfolio__item-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1314px){
+    .portfolio__item {
+        flex-basis: 45%;
+    }
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 768px){
+    .portfolio__container {
+         gap: 1rem;
+    }
+
+    .portfolio__item {
+        flex-basis: 70%;
+    }
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 600px){
+    .portfolio__item {
+        flex-basis: 85%;
+    }
+}

@@ -1,0 +1,52 @@
+
+nav {
+    background : rgba(0, 0, 0, 0.3);
+    width: max-content;
+    height: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 1000;
+    position: fixed;
+    left: 2%;
+    top: 25%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: var(--transition);
+}
+
+nav .nav-icon {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+nav .nav-icon:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav .nav-icon.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ========== MEDIA QUERIES (TABLET DEVICES) ========== */
+@media screen and (max-width: 1024px){
+    nav {
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        height: 80px;
+    }
+}
