@@ -67,13 +67,15 @@
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 0 0;
+    margin: 1rem 0 0 0;
+    line-height: 1.2;
+    height: 80px;
 }
 
 .portfolio__item p {
     color: var(--color-light);
-    margin-bottom: 1.2rem;
     font-size: 1rem;
+    height: 85px;
 }
 
 .portfolio__item p span {
