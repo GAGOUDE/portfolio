@@ -40,7 +40,7 @@
 
 .portfolio__container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
@@ -50,7 +50,7 @@
 .portfolio__item {
     flex-basis: 20%;
     background: var(--color-bg-variant);
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
