@@ -28,7 +28,7 @@ function Portfolio() {
     <>
       <section id="portfolio">
         <h5>My Recent Work</h5>
-        <h2>Portfolio <span style={{color: 'red'}}>(Actualisation des projet en cours)</span></h2>
+        <h2>Portfolio <span style={{color: 'red'}}>(Actualisation des PROJETS en cours)</span></h2>
 
         {/* Portfolio Catégories */}
         <div className="portfolio__labels">
