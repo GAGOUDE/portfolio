@@ -1,14 +1,14 @@
 
 export const portfolio = [
-    {
-        id: 'bootcamp2',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652442847/Portfolio/Portfolio-weather-app_oomebi.png',
-        title: "Weather App",
-        tech: "Bootstrap, NodeJS / Express, Template EJS, Weather API, Leaflet API. ",
-        gitHub: "https://github.com/GAGOUDE/projet-weather-app",
-        demo: "https://github.com/GAGOUDE/projet-weather-app",
-        category: ["all", "application web"]
-    },
+    // {
+    //     id: 'bootcamp2',
+    //     image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652442847/Portfolio/Portfolio-weather-app_oomebi.png',
+    //     title: "Weather App",
+    //     tech: "Bootstrap, NodeJS / Express, Template EJS, Weather API, Leaflet API. ",
+    //     gitHub: "https://github.com/GAGOUDE/projet-weather-app",
+    //     demo: "https://github.com/GAGOUDE/projet-weather-app",
+    //     category: ["all", "application web"]
+    // },
     {
         id: 'bootcamp1',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652354354/Portfolio/Portfolio-bike-shop_iqcare.png',
