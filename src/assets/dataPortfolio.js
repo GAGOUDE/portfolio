@@ -10,6 +10,15 @@ export const portfolio = [
     //     category: ["all", "application web"]
     // },
     {
+        id: 'persoFoodAppWebsite1',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1653472073/Portfolio/portfolio-food-recipe-app_zaptha.png',
+        title: "Food Recipe App",
+        tech: "React JS, Material-UI, Recipe Search API.",
+        gitHub: "https://github.com/GAGOUDE/food-recipe-app",
+        demo: "https://food-recipe-website-app.netlify.app",
+        category: ["all", "application web"]
+    },
+    {
         id: 'bootcamp1',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652354354/Portfolio/Portfolio-bike-shop_iqcare.png',
         title: "Bike Shop",
