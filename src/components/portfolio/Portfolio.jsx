@@ -28,7 +28,8 @@ function Portfolio() {
     <>
       <section id="portfolio">
         <h5>My Recent Work</h5>
-        <h2>Portfolio <span style={{color: 'red', fontSize: '20px'}}>(Actualisation des PROJETS en cours)</span></h2>
+        <h2>Portfolio</h2>
+        {/* <h2>Portfolio <span style={{color: 'red', fontSize: '20px'}}>(Actualisation des PROJETS en cours)</span></h2> */}
 
         {/* Portfolio Catégories */}
         <div className="portfolio__labels">
@@ -54,7 +55,7 @@ function Portfolio() {
             Web Application
           </a>
 
-          <a
+          {/* <a
             href="/#category-mobile"
             active={filter === "application mobile"}
             onClick={() => {
@@ -63,7 +64,7 @@ function Portfolio() {
             className={activeCategory === '#category-mobile' ? 'active-category' : ''}
           >
             Mobile Application
-          </a>
+          </a> */}
 
           <a
             href="/#category-others"

@@ -8,7 +8,7 @@ import { DiJavascript1 } from 'react-icons/di';
 import { SiJquery } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
 import { FaNodeJs } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
+import { SiMongodb, SiFirebase } from 'react-icons/si';
 
 const Experience = () => {
   return (
@@ -67,7 +67,7 @@ const Experience = () => {
             <article className="experience__details">
               <div>
                 <FaReact className='experience__details-icon' />
-                <h4>React</h4>
+                <h4>React JS / React Native</h4>
               </div>
             </article>
 
@@ -91,6 +91,13 @@ const Experience = () => {
               <div>
                 <SiMongodb className='experience__details-icon' />
                 <h4>Mongo DB</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <div>
+                <SiFirebase className='experience__details-icon' />
+                <h4>Firebase</h4>
               </div>
             </article>
 
