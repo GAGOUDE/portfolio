@@ -4,6 +4,7 @@ import ME from '../../assets/portrait1.jpg';
 // import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { BsFolderCheck } from 'react-icons/bs';
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -41,11 +42,14 @@ const About = () => {
             </article>
 
             {/* Projets */}
-            <article className='about__card'>
-              <BsFolderCheck className='about__icon' />
-              <h5>Projets</h5>
-              <small>Environ une dizaine</small>
-            </article>
+           
+            <Link to="portfolio" spy={true} smooth={true} duration={300}>
+              <article className='about__card' style={{cursor: "pointer"}}>
+                <BsFolderCheck className='about__icon' />
+                <h5>Projets</h5>
+                <small>Environ une dizaine</small>
+              </article>
+            </Link>
           </div>
 
           <a href="#contact" className='btn btn-primary'>Me contacter</a>
