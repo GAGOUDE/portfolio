@@ -8,11 +8,30 @@ import { Link } from 'react-scroll';
 const Nav = () => {
   return (
     <nav>
-      <Link activeClass="active" className="nav-icon" to="home" spy={true} smooth={true} duration={300} ><FaHome /></Link>
-      <Link activeClass="active" className="nav-icon" to="about" spy={true} smooth={true} duration={300} ><FaRegUser /></Link>
-      <Link activeClass="active" className="nav-icon" to="experience" spy={true} smooth={true} duration={300} ><FaBook /></Link>
-      <Link activeClass="active" className="nav-icon" to="portfolio" spy={true} smooth={true} duration={300} ><RiComputerLine /></Link>
-      <Link activeClass="active" className="nav-icon" to="contact" spy={true} smooth={true} duration={300} ><BiMessageEdit /></Link>
+      <Link activeClass="active" className="nav-icon" to="home" spy={true} smooth={true} duration={300}>
+        <FaHome />
+        <p className="nav-item">Accueil</p>
+      </Link>
+
+      <Link activeClass="active" className="nav-icon" to="about" spy={true} smooth={true} duration={300}>
+        <FaRegUser />
+        <p className="nav-item">À propos de moi</p>
+      </Link>
+
+      <Link activeClass="active" className="nav-icon" to="experience" spy={true} smooth={true} duration={300}>
+        <FaBook />
+        <p className="nav-item">Compétences</p>
+      </Link>
+
+      <Link activeClass="active" className="nav-icon" to="portfolio" spy={true} smooth={true} duration={300}>
+        <RiComputerLine />
+        <p className="nav-item">Projets</p>
+      </Link>
+      
+      <Link activeClass="active" className="nav-icon" to="contact" spy={true} smooth={true} duration={300}>
+        <BiMessageEdit />
+        <p className="nav-item">Contact</p>
+      </Link>
     </nav>
   )
 }

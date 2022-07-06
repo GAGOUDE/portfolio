@@ -29,6 +29,7 @@ nav .nav-icon {
     color: var(--color-light);
     font-size: 1.1rem;
     cursor: pointer;
+    position: relative;
 }
 
 nav .nav-icon:hover {
@@ -39,6 +40,26 @@ nav .nav-icon.active {
     background: var(--color-primary);
     color: var(--color-white);
 }
+
+nav .nav-item {
+    position: absolute; 
+    left: -10%;
+    top: 95%;
+    display: none;
+    transform: all .3ms;
+    width: 140px;
+    padding: 2px;
+    font-size: 0.9rem;
+}
+
+nav .nav-icon:hover .nav-item {
+    display: block;
+}
+
+nav .nav-icon.active .nav-item {
+    display: block;
+}
+
 
 /* ========== MEDIA QUERIES (TABLET DEVICES) ========== */
 @media screen and (max-width: 1024px){

@@ -19,10 +19,19 @@ export const portfolio = [
         category: ["all", "application web"]
     },
     {
+        id: 'persoBlaguesAleatoires',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1657115130/Portfolio/portfolio-blagues-aleatoires-app_updhw8.png',
+        title: "Générateur des blagues aléatoires",
+        tech: "HTML, CSS, JavaScript, joke API.",
+        gitHub: "https://github.com/GAGOUDE/blagues-aleatoires",
+        demo: "https://bagues-aleatoires.netlify.app/",
+        category: ["all", "application web"]
+    },
+    {
         id: 'bootcamp1',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652354354/Portfolio/Portfolio-bike-shop_iqcare.png',
         title: "Bike Shop",
-        tech: "Bootstrap, NodeJS / Express, Template EJS, API Stripe.",
+        tech: "Bootstrap, Node JS / Express JS, Template EJS, API Stripe.",
         gitHub: "https://github.com/GAGOUDE/projet-bike-shop",
         demo: "https://projet-bike-shop.herokuapp.com",
         category: ["all", "application web"]
@@ -34,7 +43,7 @@ export const portfolio = [
         tech: "HTML, CSS, JavaScript.",
         gitHub: "https://github.com/GAGOUDE/Responsive-ManageLandingPage-ChallengeFrontendMentor",
         demo: "https://landingmanagepage.netlify.app/",
-        category: ["all", "others"]
+        category: ["all", "landing-page"]
     },
     {
         id: 'productsFilter',
@@ -52,7 +61,7 @@ export const portfolio = [
         tech: "HTML, SCSS.",
         gitHub: "https://github.com/GAGOUDE/Responsive-InsureLandingPage-ChallengeFrontendMentor",
         demo: "https://landinginsurepage.netlify.app/",
-        category: ["all", "others"]
+        category: ["all", "landing-page"]
     },
     {
         id: 'gallerySlider',
@@ -70,7 +79,7 @@ export const portfolio = [
         tech: "HTML, CSS, JavaScript.",
         gitHub: "https://github.com/GAGOUDE/Responsive-BookmarkLandingPage-ChallengeFrontEndMentor",
         demo: "https://landingbookmarkpage.netlify.app/",
-        category: ["all", "others"]
+        category: ["all", "landing-page"]
     },
     {
         id: 'landingRoomPage',
@@ -79,7 +88,7 @@ export const portfolio = [
         tech: "HTML, CSS, JavaScript",
         gitHub: "https://github.com/GAGOUDE/Responsive-RoomHomepage-ChallengeFrontendMentor",
         demo: "https://landingroompage.netlify.app/",
-        category: ["all", "others"]
+        category: ["all", "landing-page"]
     },
     
 ]

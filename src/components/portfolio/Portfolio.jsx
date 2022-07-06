@@ -55,6 +55,17 @@ function Portfolio() {
             Web Application
           </a>
 
+          <a
+            href="#category-landing"
+            active={filter === "landing-page"}
+            onClick={() => {
+              setFilter("landing-page"); setActiveCategory('#category-landing')
+            }}
+            className={activeCategory === '#category-landing' ? 'active-category' : ''}
+          >
+            Landing Page
+          </a>
+
           {/* <a
             href="/#category-mobile"
             active={filter === "application mobile"}
