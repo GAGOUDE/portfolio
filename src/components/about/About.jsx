@@ -24,7 +24,7 @@ const About = () => {
       {/* Contenu */}
         <div className="about__content">
           {/* Présentation */}
-          <p>Je suis diplômé d'un <span>Master 2 recherche en microbiologie fondamentale et appliquée</span>, et je me suis reconverti dans le numérique. <br /> Dans un premier temps, j'ai appris à coder par le biais d'un apprentissage en autodidacte. Ensuite, j'ai intégré une formation Bootcamp qui m'a permis d'obtenir le <span>Titre professionnel RNCP 6 Chef de projet d'applications Web et mobile</span>. <br /> </p>
+          <p>Je suis diplômé d'un <span>Master 2 recherche en microbiologie fondamentale et appliquée</span>, et je me suis reconverti dans le numérique. <br /> Dans un premier temps, j'ai appris à coder par le biais d'un apprentissage en autodidacte. Ensuite, j'ai intégré une formation Bootcamp qui m'a permis d'obtenir le <span>Titre professionnel RNCP 6 Chef de projet d'applications Web et Mobile</span>. <br /> </p>
 
           <div className="about__cards">
             {/* Experience */}
@@ -38,7 +38,7 @@ const About = () => {
             <article className='about__card'>
               <FiUsers className='about__icon' />
               <h5>Experience</h5>
-              <small>Débutant</small>
+              <small>Junior</small>
             </article>
 
             {/* Projets */}
