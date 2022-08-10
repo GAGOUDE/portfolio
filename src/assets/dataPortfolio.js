@@ -23,7 +23,7 @@ export const portfolio = [
         // Todo App
         id: 'persoTodoAppWebsite1',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1659616484/Portfolio/portfolio-todo-app_v7jzfy.png',
-        title: "Food Recipe App",
+        title: "To Do List App",
         tech: "HTML, CSS, JavaScript, React JS",
         gitHub: "https://github.com/GAGOUDE/Todo-App",
         demo: "https://portfolio-todo-app-2022.netlify.app/",
