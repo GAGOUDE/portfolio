@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import ME from '../../assets/portrait1.jpg';
+import ME from '../../assets/images/portrait1.jpg';
 // import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { BsFolderCheck } from 'react-icons/bs';
@@ -19,9 +19,9 @@ const About = () => {
             <img src={ME} alt="portrait" />
           </div>
         </div>
-      
 
-      {/* Contenu */}
+
+        {/* Contenu */}
         <div className="about__content">
           {/* Présentation */}
           <p>Je suis diplômé d'un <span>Master 2 recherche en microbiologie fondamentale et appliquée</span>, et je me suis reconverti dans le numérique. <br /> Dans un premier temps, j'ai appris à coder par le biais d'un apprentissage en autodidacte. Ensuite, j'ai intégré une formation Bootcamp qui m'a permis d'obtenir le <span>Titre professionnel RNCP 6 Chef de projet d'applications Web et Mobile</span>. <br /> </p>
@@ -42,9 +42,9 @@ const About = () => {
             </article>
 
             {/* Projets */}
-           
+
             <Link to="portfolio" spy={true} smooth={true} duration={300}>
-              <article className='about__card' style={{cursor: "pointer"}}>
+              <article className='about__card' style={{ cursor: "pointer" }}>
                 <BsFolderCheck className='about__icon' />
                 <h5>Projets</h5>
                 <small>Environ une dizaine</small>

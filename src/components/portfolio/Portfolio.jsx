@@ -100,7 +100,7 @@ function Portfolio() {
                   </div>
 
                   <h3>{item.title}</h3>
-                  <p><span>Technologies utilisées : </span>{item.tech}</p>
+                  <p><span>Technologies : </span>{item.tech}</p>
                   <div className="portfolio__item-cta">
                     <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>Lien GitHub</a>
                     <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Demo</a>

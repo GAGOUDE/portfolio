@@ -10,6 +10,16 @@ export const portfolio = [
     //     category: ["all", "application web"]
     // },
     {
+        // MERN API Login Register
+        id: 'persoMernApiLoginRegister',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1674601494/Portfolio/portfolio-mern-api-login-register_ehz9dp.png',
+        title: "MERN API Login-Register",
+        tech: "MongoDB, Express, React JS, NodeJS, Redux, Redux Toolkit, JSON Web Tokens, Material-UI.",
+        gitHub: "https://github.com/GAGOUDE/MERN-Api-Login-Register",
+        demo: "https://mern-api-login-register.netlify.app/",
+        category: ["all", "application web", "mern", "fullstack"]
+    },
+    {
         // Food Recipe App
         id: 'persoFoodAppWebsite1',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1653472073/Portfolio/portfolio-food-recipe-app_zaptha.png',
@@ -109,5 +119,5 @@ export const portfolio = [
         demo: "https://landingroompage.netlify.app/",
         category: ["all", "landing-page"]
     },
-    
+
 ]
