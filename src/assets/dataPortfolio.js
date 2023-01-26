@@ -14,20 +14,20 @@ export const portfolio = [
         id: 'persoMernApiLoginRegister',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1674601494/Portfolio/portfolio-mern-api-login-register_ehz9dp.png',
         title: "MERN API Login-Register",
-        tech: "MongoDB, Express, React JS, NodeJS, Redux, Redux Toolkit, JSON Web Tokens, Material-UI.",
+        tech: "MongoDB, Express, React JS, NodeJS, Redux, Redux Toolkit, JSON Web Tokens, Material UI.",
         gitHub: "https://github.com/GAGOUDE/MERN-Api-Login-Register",
         demo: "https://mern-api-login-register.netlify.app/",
         category: ["all", "application web", "mern", "fullstack"]
     },
     {
-        // Food Recipe App
-        id: 'persoFoodAppWebsite1',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1653472073/Portfolio/portfolio-food-recipe-app_zaptha.png',
-        title: "Food Recipe App",
-        tech: "HTML, CSS, React JS, Material-UI, Recipe Search API.",
-        gitHub: "https://github.com/GAGOUDE/food-recipe-app",
-        demo: "https://food-recipe-website-app.netlify.app",
-        category: ["all", "application web"]
+        // Material Ui
+        id: 'persoMaterialUI',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1674774650/portfolio-Material-UI-decouverte_rtiwj8.png',
+        title: "Material UI - Réseau social Design",
+        tech: "Material UI, React JS",
+        gitHub: "https://github.com/GAGOUDE/material-ui-decouverte",
+        demo: "https://portfolio-materialui-design.netlify.app/",
+        category: ["all", "application web", "librairie react"]
     },
     {
         // Todo App
@@ -37,6 +37,16 @@ export const portfolio = [
         tech: "HTML, CSS, JavaScript, React JS",
         gitHub: "https://github.com/GAGOUDE/Todo-App",
         demo: "https://portfolio-todo-app-2022.netlify.app/",
+        category: ["all", "application web"]
+    },
+    {
+        // Food Recipe App
+        id: 'persoFoodAppWebsite1',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1653472073/Portfolio/portfolio-food-recipe-app_zaptha.png',
+        title: "Food Recipe App",
+        tech: "HTML, CSS, React JS, Material UI, Recipe Search API.",
+        gitHub: "https://github.com/GAGOUDE/food-recipe-app",
+        demo: "https://food-recipe-website-app.netlify.app",
         category: ["all", "application web"]
     },
     {

@@ -9,6 +9,8 @@ import { SiJquery } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
 import { FaNodeJs } from 'react-icons/fa';
 import { SiMongodb, SiFirebase } from 'react-icons/si';
+import { SiMaterialui } from 'react-icons/si';
+import { AiFillSetting } from 'react-icons/ai';
 
 const Experience = () => {
   return (
@@ -67,7 +69,14 @@ const Experience = () => {
             <article className="experience__details">
               <div>
                 <FaReact className='experience__details-icon' />
-                <h4>React JS / React Native</h4>
+                <h4>React JS/Native</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <div>
+                <SiMaterialui className='experience__details-icon' />
+                <h4>Material UI</h4>
               </div>
             </article>
 
@@ -98,6 +107,13 @@ const Experience = () => {
               <div>
                 <SiFirebase className='experience__details-icon' />
                 <h4>Firebase</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <div>
+                <AiFillSetting className='experience__details-icon' />
+                <h4>API REST</h4>
               </div>
             </article>
 

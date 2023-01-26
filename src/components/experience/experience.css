@@ -6,7 +6,7 @@
 
 .experience__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2rem 2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -28,7 +28,7 @@
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    gap: 1rem;
 }
 
 .experience__frontend .experience__content {
@@ -36,6 +36,7 @@
 }
 
 .experience__details {
+    width: 100%;
     display: flex;
     gap: 1rem;
 }
@@ -70,6 +71,16 @@
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
 @media screen and (max-width: 600px){
     .experience__container {
-        gap: 1rem;
+        gap: 5px;
     }
+
+    .experience__container > div {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .experience__content {
+    grid-template-columns: 1fr;
+}
 }
