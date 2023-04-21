@@ -11,6 +11,7 @@ import { FaNodeJs } from 'react-icons/fa';
 import { SiMongodb, SiFirebase } from 'react-icons/si';
 import { SiMaterialui } from 'react-icons/si';
 import { AiFillSetting } from 'react-icons/ai';
+import { SiTailwindcss } from 'react-icons/si';
 
 const Experience = () => {
   return (
@@ -19,7 +20,7 @@ const Experience = () => {
       <h2>Mes compétences</h2>
 
       <div className="container experience__container">
-        {/* Frontend */}
+        {/* FRONTEND */}
         <div className="experience__frontend">
           <h3>Programmation Frontend</h3>
 
@@ -54,6 +55,13 @@ const Experience = () => {
 
             <article className="experience__details">
               <div>
+                <SiTailwindcss className='experience__details-icon' />
+                <h4>Tailwind</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <div>
                 <SiJquery className='experience__details-icon' />
                 <h4>jQuery</h4>
               </div>
@@ -69,7 +77,7 @@ const Experience = () => {
             <article className="experience__details">
               <div>
                 <FaReact className='experience__details-icon' />
-                <h4>React JS/Native</h4>
+                <h4>React JS | Native</h4>
               </div>
             </article>
 
@@ -84,7 +92,7 @@ const Experience = () => {
 
         </div>
 
-        {/* Backend */}
+        {/* BACKEND */}
         <div className="experience__backend">
           <h3>Programmation Backend</h3>
 
@@ -92,7 +100,7 @@ const Experience = () => {
             <article className="experience__details">
               <div>
                 <FaNodeJs className='experience__details-icon' />
-                <h4>Node JS / Express JS</h4>
+                <h4>Node JS | Express JS</h4>
               </div>
             </article>
 
@@ -118,10 +126,8 @@ const Experience = () => {
             </article>
 
           </div>
-
         </div>
       </div>
-
     </section>
   )
 }

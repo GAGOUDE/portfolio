@@ -36,7 +36,7 @@ export const portfolio = [
         title: "To Do List App",
         tech: "HTML, CSS, JavaScript, React JS",
         gitHub: "https://github.com/GAGOUDE/Todo-App",
-        demo: "https://portfolio-todo-app-2022.netlify.app/",
+        demo: "https://frontend-todo-app-portfolio.netlify.app/",
         category: ["all", "application web"]
     },
     {
