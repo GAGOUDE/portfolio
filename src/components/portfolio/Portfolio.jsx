@@ -2,12 +2,28 @@ import React, { useEffect, useState } from "react";
 
 import "./portfolio.css";
 import { portfolio } from '../../assets/dataPortfolio';
+import PortfolioImageModal from "../modal/PortfolioImageModal";
 
 function Portfolio() {
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
 
-  const [activeCategory, setActiveCategory] = useState('#category-all')
+  const [activeCategory, setActiveCategory] = useState('#category-all');
+  // For modal
+  const [open, setOpen] = useState(false);
+  const [openImage, setOpenImage] = useState({});
+
+  const handleOpen = ({ imageSrc, imageAlt }) => {
+    setOpen(true);
+    setOpenImage({ src: imageSrc, alt: imageAlt });
+  };
+
+  console.log(openImage)
+
+  const handleClose = () => {
+    setOpen(false);
+    setOpenImage({});
+  };
 
   useEffect(() => {
     setProjects(portfolio);
@@ -29,7 +45,6 @@ function Portfolio() {
       <section id="portfolio">
         <h5>My Recent Work</h5>
         <h2>Portfolio</h2>
-        {/* <h2>Portfolio <span style={{color: 'red', fontSize: '20px'}}>(Actualisation des PROJETS en cours)</span></h2> */}
 
         {/* Portfolio Catégories */}
         <div className="portfolio__labels">
@@ -92,11 +107,11 @@ function Portfolio() {
         {/* Portfolio Détails */}
         <div className="container portfolio__container">
           {
-            projects.map(item => (
-              item.filtered === true ?
+            projects.map((item) => (
+              item.filtered === true ? (
                 <article key={item.id} className="portfolio__item">
                   <div className="portfolio__item-image">
-                    <img src={item.image} alt={item.title} />
+                    <img src={item.image} alt={item.title} onClick={() => handleOpen({ imageSrc: item.image, imageAlt: item.title })} />
                   </div>
 
                   <h3>{item.title}</h3>
@@ -105,9 +120,20 @@ function Portfolio() {
                     <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>Lien GitHub</a>
                     <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Demo</a>
                   </div>
-                </article> : ""
+                </article>) : null
             ))
           }
+
+          {/* Modal */}
+          {open && (
+            < PortfolioImageModal
+              open={open}
+              handleOpen={handleOpen}
+              handleClose={handleClose}
+              srcImage={openImage.src}
+              altImage={openImage.alt}
+            />
+          )}
         </div>
 
       </section>
