@@ -5,6 +5,7 @@ import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
+import PortfolioMobile from './components/portfolioMobile/PortfolioMobile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Experience />
       <Portfolio />
+      <PortfolioMobile />
       <Contact />
     </>
   );

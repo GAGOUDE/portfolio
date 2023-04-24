@@ -4,6 +4,7 @@ import ME from '../../assets/images/portrait1.jpg';
 // import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { BsFolderCheck } from 'react-icons/bs';
+import { FaMobileAlt } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
 const About = () => {
@@ -27,13 +28,6 @@ const About = () => {
           <p>Je me suis reconverti dans le numérique suite à une découverte autodidactique. Ensuite, j'ai intégré une formation Bootcamp qui m'a permis d'obtenir le <span>Titre professionnel RNCP 6 Chef de projet d'applications Web et Mobile</span>. <br /> </p>
 
           <div className="about__cards">
-            {/* Experience */}
-            {/* <article className='about__card'>
-              <FaAward className='about__icon' />
-              <h5>Clients</h5>
-              <small>Secteurs public et privé</small>
-            </article> */}
-
             {/* Services */}
             <article className='about__card'>
               <FiUsers className='about__icon' />
@@ -47,7 +41,15 @@ const About = () => {
               <article className='about__card' style={{ cursor: "pointer" }}>
                 <BsFolderCheck className='about__icon' />
                 <h5>Projets</h5>
-                <small>Environ une dizaine</small>
+                <small>Applications Web</small>
+              </article>
+            </Link>
+
+            <Link to="portfolio-mobile" spy={true} smooth={true} duration={300}>
+              <article className='about__card' style={{ cursor: "pointer" }}>
+                <FaMobileAlt className='about__icon' />
+                <h5>Projets</h5>
+                <small>Applications Mobiles</small>
               </article>
             </Link>
           </div>

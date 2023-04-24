@@ -8,7 +8,7 @@ function Portfolio() {
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
 
-  const [activeCategory, setActiveCategory] = useState('#category-all');
+  const [activeCategory, setActiveCategory] = useState('#category-web');
   // For modal
   const [open, setOpen] = useState(false);
   const [openImage, setOpenImage] = useState({});
@@ -48,7 +48,7 @@ function Portfolio() {
 
         {/* Portfolio Catégories */}
         <div className="portfolio__labels">
-          <a
+          {/* <a
             href="#category-all"
             active={filter === "all"}
             onClick={() => {
@@ -57,7 +57,7 @@ function Portfolio() {
 
             className={activeCategory === '#category-all' ? 'active-category' : ''}>
             All
-          </a>
+          </a> */}
 
           <a
             href="#category-web"
@@ -82,17 +82,6 @@ function Portfolio() {
           </a>
 
           {/* <a
-            href="/#category-mobile"
-            active={filter === "application mobile"}
-            onClick={() => {
-              setFilter("application mobile"); setActiveCategory('#category-mobile')
-            }}
-            className={activeCategory === '#category-mobile' ? 'active-category' : ''}
-          >
-            Mobile Application
-          </a> */}
-
-          <a
             href="/#category-others"
             active={filter === "others"}
             onClick={() => {
@@ -101,7 +90,7 @@ function Portfolio() {
             className={activeCategory === '#others' ? 'active-category' : ''}
           >
             Others
-          </a>
+          </a> */}
         </div>
 
         {/* Portfolio Détails */}

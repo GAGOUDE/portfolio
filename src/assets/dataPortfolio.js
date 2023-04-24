@@ -1,18 +1,9 @@
 
 export const portfolio = [
-    // {
-    //     id: 'bootcamp2',
-    //     image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652442847/Portfolio/Portfolio-weather-app_oomebi.png',
-    //     title: "Weather App",
-    //     tech: "Bootstrap, NodeJS / Express, Template EJS, Weather API, Leaflet API. ",
-    //     gitHub: "https://github.com/GAGOUDE/projet-weather-app",
-    //     demo: "https://github.com/GAGOUDE/projet-weather-app",
-    //     category: ["all", "application web"]
-    // },
     {
         // MERN API Login Register
         id: 'persoMernApiLoginRegister',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1674601494/Portfolio/portfolio-mern-api-login-register_ehz9dp.png',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682349254/Portfolio/portfolio-mern-api-login-register_fbtfea.png',
         title: "MERN API Login-Register",
         tech: "MongoDB, Express, React JS, NodeJS, Redux, Redux Toolkit, JSON Web Tokens, Material UI.",
         gitHub: "https://github.com/GAGOUDE/MERN-Api-Login-Register",
@@ -22,7 +13,7 @@ export const portfolio = [
     {
         // Material Ui
         id: 'persoMaterialUI',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1674774650/portfolio-Material-UI-decouverte_rtiwj8.png',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682349534/Portfolio/portfolio-Material-UI-decouverte_vypm9h.png',
         title: "Material UI - Réseau social Design",
         tech: "Material UI, React JS",
         gitHub: "https://github.com/GAGOUDE/material-ui-decouverte",
@@ -32,7 +23,7 @@ export const portfolio = [
     {
         // Todo App
         id: 'persoTodoAppWebsite1',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1659616484/Portfolio/portfolio-todo-app_v7jzfy.png',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682349335/Portfolio/portfolio-todo-app_mpw4lj.png',
         title: "To Do List App",
         tech: "HTML, CSS, JavaScript, React JS",
         gitHub: "https://github.com/GAGOUDE/Todo-App",
@@ -42,7 +33,7 @@ export const portfolio = [
     {
         // Food Recipe App
         id: 'persoFoodAppWebsite1',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1653472073/Portfolio/portfolio-food-recipe-app_zaptha.png',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682349438/Portfolio/portfolio-food-recipe-app_rvos8u.png',
         title: "Food Recipe App",
         tech: "HTML, CSS, React JS, Material UI, Recipe Search API.",
         gitHub: "https://github.com/GAGOUDE/food-recipe-app",
