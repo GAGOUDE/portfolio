@@ -15,7 +15,7 @@ const Nav = () => {
 
       <Link activeClass="active" className="nav-icon" to="about" spy={true} smooth={true} duration={300}>
         <FaRegUser />
-        <p className="nav-item">À propos de moi</p>
+        <p className="nav-item">Présentation</p>
       </Link>
 
       <Link activeClass="active" className="nav-icon" to="experience" spy={true} smooth={true} duration={300}>
@@ -27,7 +27,7 @@ const Nav = () => {
         <RiComputerLine />
         <p className="nav-item">Projets</p>
       </Link>
-      
+
       <Link activeClass="active" className="nav-icon" to="contact" spy={true} smooth={true} duration={300}>
         <BiMessageEdit />
         <p className="nav-item">Contact</p>

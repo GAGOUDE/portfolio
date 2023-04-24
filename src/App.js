@@ -6,9 +6,6 @@ import Experience from './components/experience/Experience';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 
-// link: https://www.youtube.com/watch?v=G-Cr00UYokU
-
-
 function App() {
   return (
     <>

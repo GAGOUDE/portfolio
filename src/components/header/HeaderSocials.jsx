@@ -6,10 +6,10 @@ const HeaderSocials = () => {
   return (
     <div className='header__socials'>
       <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gael-freddy-gagoude-a764b769/">
-        <ImLinkedin />
+        <ImLinkedin style={{ fontSize: 28 }} />
       </a>
       <a target="_blank" rel="noreferrer" href="https://github.com/GAGOUDE">
-        <FaGithub />
+        <FaGithub style={{ fontSize: 28 }} />
       </a>
     </div>
   )

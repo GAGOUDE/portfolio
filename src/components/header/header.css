@@ -1,6 +1,6 @@
 header {
-    height: 100vh;
-    padding-top: 7rem;
+    height: 800px;
+    padding-top: 2rem;
     overflow: hidden;
 }
 
@@ -13,6 +13,7 @@ header {
 /* ===== CTA ====== */
 .cta {
     margin-top: 2.5rem;
+    margin-bottom: 5.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -27,21 +28,19 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 10rem;
     z-index: 200;
     transition: var(--transition);
 }
 
 /* ===== ME ====== */
-.me{
-    /* background: linear-gradient(var(--color-primary), transparent); */
+.me {
     width: 45rem;
-    height: 45rem;
     position: absolute;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 22rem;
+    margin-top: 10rem;
     border-radius: 15rem 15rem 0 0;
     overflow: hidden;
     padding: 1.5rem;
@@ -59,19 +58,25 @@ header {
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 910px) {
     header {
-        height: 100vh;
+        height: 700px;
+    }
+
+    .me {
+        width: 40rem;
     }
 }
 
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 700px;
     }
 
-    .scroll__down, .header__socials::after {
+    .scroll__down,
+    .header__socials::after {
         display: none;
     }
 
@@ -79,11 +84,12 @@ header {
         align-items: flex-start;
         justify-content: flex-start;
         position: relative;
-        top: 6rem;
+        top: 2rem;
         gap: 1rem;
     }
 
     .me {
-        width: 40rem;
+        margin-top: 2rem;
+        width: 100%;
     }
 }

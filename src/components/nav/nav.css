@@ -1,6 +1,5 @@
-
 nav {
-    background : rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     width: max-content;
     height: max-content;
     padding: 0.7rem 1.7rem;
@@ -42,9 +41,10 @@ nav .nav-icon.active {
 }
 
 nav .nav-item {
-    position: absolute; 
-    left: -10%;
-    top: 95%;
+    position: absolute;
+    left: -30%;
+    top: 100%;
+    text-align: start;
     display: none;
     transform: all .3ms;
     width: 140px;
@@ -62,12 +62,26 @@ nav .nav-icon.active .nav-item {
 
 
 /* ========== MEDIA QUERIES (TABLET DEVICES) ========== */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     nav {
         left: 50%;
         top: 90%;
         transform: translateX(-50%);
         flex-direction: row;
         height: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        top: 85%;
+    }
+
+    nav .nav-icon:hover .nav-item {
+        display: none;
+    }
+
+    nav .nav-item {
+        left: -10%;
     }
 }
