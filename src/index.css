@@ -149,4 +149,9 @@ img {
     section>h2 {
         margin-bottom: 2rem;
     }
+
+    section>h5 {
+        width: 85%;
+        margin: auto;
+    }
 }

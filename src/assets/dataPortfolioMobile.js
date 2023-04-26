@@ -15,7 +15,18 @@ export const portfolioMobile = [
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682354270/Portfolio/generateur-citation-app_qytgja.jpg',
         title: "Générateur de citations App",
         tech: "React Native, Expo, Quotes API",
+        gitHub: "https://github.com/GAGOUDE/generateur-citations-app-react-native",
         demo: "https://expo.dev/@gagoude/generateur-citations-app",
         category: ["all", "application mobile"]
+    },
+    {
+        // Bottom Tab Navigation
+        id: 'persoBottomTabNavivation',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682508198/Portfolio/bottom-tab-navigation_mvf3vp.jpg',
+        title: "Bottom Tab Navigation",
+        tech: "React Native, Expo, React Native Elements",
+        gitHub: "https://github.com/GAGOUDE/bottom-tab-navigation-react-native",
+        demo: "https://expo.dev/@gagoude/bottom-tab-navigation",
+        category: ["all", "others"]
     },
 ]

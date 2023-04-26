@@ -27,6 +27,8 @@ function PortfolioMobile() {
         <>
             <section id="portfolio-mobile">
 
+                <h5>Pour tester les applications, veuillez télécharger l'application <a href="https://expo.dev/client" rel="noreferrer" target='_blank'>Expo Go</a> et scanner le QR code du Live test.</h5>
+
                 {/* Portfolio Catégories */}
                 <div className="portfolio__labels">
                     {/* <a
@@ -69,12 +71,18 @@ function PortfolioMobile() {
                         projects.map((item) => (
                             item.filtered === true ? (
                                 <article key={item.id} className="portfolio__item">
-
-
                                     <h3>{item.title}</h3>
                                     <p><span>Technologies : </span>{item.tech}</p>
                                     <div className="portfolio__item-cta">
-                                        <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Code et Live Test</a>
+                                        {item.gitHub ? (
+                                            <>
+                                                <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>Lien GitHub</a>
+                                                <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Test</a>
+                                            </>
+                                        ) : (
+                                            <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Code et Live Test</a>
+                                        )}
+
                                     </div>
 
                                     <div className="portfolio__item-image">
