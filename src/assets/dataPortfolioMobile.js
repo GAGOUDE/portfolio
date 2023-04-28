@@ -20,6 +20,15 @@ export const portfolioMobile = [
         category: ["all", "application mobile"]
     },
     {
+        // Job App
+        id: 'persoJobApp',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682686728/Portfolio/job-app_ihkchs.jpg',
+        title: "Job App",
+        tech: "React Native, Expo, jsearch API, Axios",
+        demo: "https://expo.dev/@gagoude/job-app",
+        category: ["all", "application mobile"]
+    },
+    {
         // Bottom Tab Navigation
         id: 'persoBottomTabNavivation',
         image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1682508198/Portfolio/bottom-tab-navigation_mvf3vp.jpg',
