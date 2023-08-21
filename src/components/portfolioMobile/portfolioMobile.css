@@ -62,7 +62,7 @@
 
 .portfolio__item-image {
     border-radius: 1rem;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -91,9 +91,33 @@
 .portfolio__item-cta {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    height: 70px;
     align-items: center;
-    margin: 10px auto;
+    margin: 5px auto;
 }
+
+.portfolio__item-cta-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.portfolio__item-cta-link .test-bg {
+    background-color: black;
+}
+
+.portfolio__item-cta-link .bg-android {
+    background-color: #2EDF85;
+}
+
+.portfolio__item-cta-link .test-bg:hover {
+    color: black;
+    background-color: white;
+}
+
 
 /* ========== MEDIA QUERIES ========== */
 @media screen and (max-width: 768px) {

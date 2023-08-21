@@ -26,7 +26,6 @@ function PortfolioMobile() {
     return (
         <>
             <section id="portfolio-mobile">
-
                 <h5>Pour tester les applications, veuillez télécharger l'application <a href="https://expo.dev/client" rel="noreferrer" target='_blank'>Expo Go</a> et scanner le QR code du Live test.</h5>
 
                 {/* Portfolio Catégories */}
@@ -53,7 +52,7 @@ function PortfolioMobile() {
                         Mobile Application
                     </a>
 
-                    <a
+                    {/* <a
                         href="/#category-others"
                         active={filter === "others"}
                         onClick={() => {
@@ -62,7 +61,7 @@ function PortfolioMobile() {
                         className={activeCategory === '#others' ? 'active-category' : ''}
                     >
                         Others
-                    </a>
+                    </a> */}
                 </div>
 
                 {/* Portfolio Détails */}
@@ -75,10 +74,11 @@ function PortfolioMobile() {
                                     <p><span>Technologies : </span>{item.tech}</p>
                                     <div className="portfolio__item-cta">
                                         {item.gitHub ? (
-                                            <>
-                                                <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>Lien GitHub</a>
-                                                <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Test</a>
-                                            </>
+                                            <div className="portfolio__item-cta-link">
+                                                <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>GitHub</a>
+                                                <a href={item.demoAndroid} className='btn btn-primary test-bg bg-android' rel="noreferrer" target='_blank'>Android</a>
+                                                <a href={item.demoIos} className='btn btn-primary test-bg' rel="noreferrer" target='_blank'>iOS</a>
+                                            </div>
                                         ) : (
                                             <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Code et Live Test</a>
                                         )}
