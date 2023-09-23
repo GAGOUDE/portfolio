@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gael-freddy-gagoude-a764b769/">
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ga%C3%ABl-freddy-gagoude-a764b769/">
         <ImLinkedin style={{ fontSize: 28 }} />
       </a>
       <a target="_blank" rel="noreferrer" href="https://github.com/GAGOUDE">
