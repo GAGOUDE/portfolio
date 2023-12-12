@@ -13,9 +13,9 @@ function App() {
       <Header />
       <Nav />
       <About />
-      <Experience />
       <Portfolio />
       <PortfolioMobile />
+      <Experience />
       <Contact />
     </>
   );

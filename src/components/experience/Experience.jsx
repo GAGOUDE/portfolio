@@ -1,22 +1,14 @@
 import React from 'react';
 import './experience.css';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { FaCss3Alt } from 'react-icons/fa';
-import { FaBootstrap } from 'react-icons/fa';
-import { FaSass } from 'react-icons/fa';
+import { AiFillHtml5, AiFillSetting } from 'react-icons/ai';
+import { SiTailwindcss, SiWoocommerce, SiMaterialui, SiMongodb, SiJquery } from 'react-icons/si';
+import { FaCss3Alt, FaBootstrap, FaSass, FaReact, FaNodeJs, FaWordpress, FaElementor } from 'react-icons/fa';
 import { DiJavascript1 } from 'react-icons/di';
-import { SiJquery } from 'react-icons/si';
-import { FaReact } from 'react-icons/fa';
-import { FaNodeJs } from 'react-icons/fa';
-import { SiMongodb, SiFirebase } from 'react-icons/si';
-import { SiMaterialui } from 'react-icons/si';
-import { AiFillSetting } from 'react-icons/ai';
-import { SiTailwindcss } from 'react-icons/si';
 
 const Experience = () => {
   return (
     <section id='experience'>
-      <h5>What Skills I have</h5>
+      {/* <h5>What Skills I have</h5> */}
       <h2>Mes compétences</h2>
 
       <div className="container experience__container">
@@ -108,12 +100,12 @@ const Experience = () => {
               </div>
             </article>
 
-            <article className="experience__details">
+            {/* <article className="experience__details">
               <div>
                 <SiFirebase className='experience__details-icon' />
                 <h4>Firebase</h4>
               </div>
-            </article>
+            </article> */}
 
             <article className="experience__details">
               <div>
@@ -131,32 +123,24 @@ const Experience = () => {
           <div className="experience__content">
             <article className="experience__details">
               <div>
-                <FaNodeJs className='experience__details-icon' />
-                <h4>Node JS | Express JS</h4>
+                <FaWordpress className='experience__details-icon' />
+                <h4>Wordpress</h4>
               </div>
             </article>
 
             <article className="experience__details">
               <div>
-                <SiMongodb className='experience__details-icon' />
-                <h4>Mongo DB</h4>
+                <FaElementor className='experience__details-icon' />
+                <h4>Elementor</h4>
               </div>
             </article>
 
             <article className="experience__details">
               <div>
-                <SiFirebase className='experience__details-icon' />
-                <h4>Firebase</h4>
+                <SiWoocommerce className='experience__details-icon' />
+                <h4>WooCommerce</h4>
               </div>
             </article>
-
-            <article className="experience__details">
-              <div>
-                <AiFillSetting className='experience__details-icon' />
-                <h4>API REST</h4>
-              </div>
-            </article>
-
           </div>
         </div>
       </div>
@@ -164,4 +148,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Experience;

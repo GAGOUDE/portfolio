@@ -1,7 +1,6 @@
 import React from 'react';
 import './header.css';
 import CTA from './CTA';
-import ME from '../../assets/images/portrait1.png';
 import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
@@ -13,12 +12,8 @@ const Header = () => {
         <h5 className='text-light'>Développeur Web et Mobile <br /> JavaScript | React JS & Native | Node JS | Wordpress</h5>
 
         <CTA />
-
         <HeaderSocials />
 
-        <div className="me">
-          <img src={ME} alt='me' />
-        </div>
       </div>
     </header>
   )

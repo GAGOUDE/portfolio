@@ -8,12 +8,10 @@
     width: 100%;
     /* aspect-ratio: 1/1; */
     border-radius: 2rem;
-    background: linear-gradient(
-        30deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
+    background: linear-gradient(30deg,
+            transparent,
+            var(--color-primary),
+            transparent);
     display: grid;
     place-items: center;
 }
@@ -32,7 +30,7 @@
     filter: grayscale(0);
 }
 
-.about__content{
+.about__content {
     padding: 10px;
 }
 
@@ -87,7 +85,7 @@
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -104,7 +102,7 @@
 }
 
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;

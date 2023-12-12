@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import "./portfolio.css";
 import { portfolio } from '../../assets/dataPortfolio';
 import PortfolioImageModal from "../modal/PortfolioImageModal";
@@ -43,7 +42,7 @@ function Portfolio() {
   return (
     <>
       <section id="portfolio">
-        <h5>My Recent Work</h5>
+        {/* <h5>My Recent Work</h5> */}
         <h2>Portfolio</h2>
 
         {/* Portfolio Catégories */}
@@ -91,7 +90,6 @@ function Portfolio() {
           >
             Projets WordPress
           </a>
-
 
           {/* <a
             href="/#category-others"
@@ -142,7 +140,6 @@ function Portfolio() {
             />
           )}
         </div>
-
       </section>
     </>
   );

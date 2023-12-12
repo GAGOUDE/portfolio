@@ -8,7 +8,6 @@ import { FaMobileAlt, FaWordpress } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
 const About = () => {
-
   // Open link Projets Wordpress
   const openLinkInNewWindow = () => {
     const url = 'https://degougagence.fr/projets/';
@@ -17,7 +16,7 @@ const About = () => {
 
   return (
     <section id='about'>
-      <h5>Get to know</h5>
+      {/* <h5>Get to know</h5> */}
       <h2>Présentation</h2>
 
       {/* Image */}
@@ -27,7 +26,6 @@ const About = () => {
             <img src={ME} alt="portrait" />
           </div>
         </div>
-
 
         {/* Contenu */}
         <div className="about__content">
@@ -60,13 +58,11 @@ const About = () => {
               </article>
             </Link>
 
-
             <article className='about__card' style={{ cursor: "pointer" }} onClick={openLinkInNewWindow}>
               <FaWordpress className='about__icon' />
               <h5>Projets</h5>
               <small>WordPress</small>
             </article>
-
           </div>
 
           <a href="#contact" className='btn btn-primary'>Me contacter</a>

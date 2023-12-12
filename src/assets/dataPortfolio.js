@@ -50,16 +50,16 @@ export const portfolio = [
         demo: "https://bagues-aleatoires.netlify.app/",
         category: ["all", "application web"]
     },
-    {
-        // Bike Shop
-        id: 'bootcamp1',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652354354/Portfolio/Portfolio-bike-shop_iqcare.png',
-        title: "Bike Shop",
-        tech: "HTML, CSS, Bootstrap, Node JS / Express JS, Template EJS, API Stripe.",
-        gitHub: "https://github.com/GAGOUDE/projet-bike-shop",
-        demo: "https://projet-bike-shop.herokuapp.com",
-        category: ["all", "application web"]
-    },
+    // {
+    //     // Bike Shop
+    //     id: 'bootcamp1',
+    //     image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652354354/Portfolio/Portfolio-bike-shop_iqcare.png',
+    //     title: "Bike Shop",
+    //     tech: "HTML, CSS, Bootstrap, Node JS / Express JS, Template EJS, API Stripe.",
+    //     gitHub: "https://github.com/GAGOUDE/projet-bike-shop",
+    //     demo: "https://projet-bike-shop.herokuapp.com",
+    //     category: ["all", "application web"]
+    // },
     {
         // Manage Landing Page
         id: 'landingManagePage',
@@ -110,16 +110,16 @@ export const portfolio = [
         demo: "https://landingbookmarkpage.netlify.app/",
         category: ["all", "landing-page"]
     },
-    {
-        // room landing page
-        id: 'landingRoomPage',
-        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652738855/Portfolio/Portfolio1-RoomHomepage_zwoxde.jpg',
-        title: "Responsive Room Home Page",
-        tech: "HTML, CSS, JavaScript",
-        gitHub: "https://github.com/GAGOUDE/Responsive-RoomHomepage-ChallengeFrontendMentor",
-        demo: "https://landingroompage.netlify.app/",
-        category: ["all", "landing-page"]
-    },
+    // {
+    //     // room landing page
+    //     id: 'landingRoomPage',
+    //     image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1652738855/Portfolio/Portfolio1-RoomHomepage_zwoxde.jpg',
+    //     title: "Responsive Room Home Page",
+    //     tech: "HTML, CSS, JavaScript",
+    //     gitHub: "https://github.com/GAGOUDE/Responsive-RoomHomepage-ChallengeFrontendMentor",
+    //     demo: "https://landingroompage.netlify.app/",
+    //     category: ["all", "landing-page"]
+    // },
     {
         // Wordpress Projets
         id: 'wordpressProjets',
@@ -129,5 +129,4 @@ export const portfolio = [
         demo: "https://degougagence.fr/projets/",
         category: ["all", "wordpress-projets"]
     },
-
 ]
