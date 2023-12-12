@@ -120,5 +120,14 @@ export const portfolio = [
         demo: "https://landingroompage.netlify.app/",
         category: ["all", "landing-page"]
     },
+    {
+        // Wordpress Projets
+        id: 'wordpressProjets',
+        image: 'https://res.cloudinary.com/dqxk8fn6r/image/upload/v1702372473/Portfolio/Portfolio-Wordpress-Projets_hxxjdv.png',
+        title: "Projets Wordpress",
+        tech: "Wordpress, Elementor",
+        demo: "https://degougagence.fr/projets/",
+        category: ["all", "wordpress-projets"]
+    },
 
 ]

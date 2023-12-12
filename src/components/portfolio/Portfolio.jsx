@@ -81,6 +81,18 @@ function Portfolio() {
             Landing Page
           </a>
 
+          <a
+            href="/#wordpress-projets"
+            active={filter === "wordpress-projets"}
+            onClick={() => {
+              setFilter("wordpress-projets"); setActiveCategory('#wordpress-projets')
+            }}
+            className={activeCategory === '#wordpress-projets' ? 'active-category' : ''}
+          >
+            Projets WordPress
+          </a>
+
+
           {/* <a
             href="/#category-others"
             active={filter === "others"}
@@ -106,8 +118,14 @@ function Portfolio() {
                   <h3>{item.title}</h3>
                   <p><span>Technologies : </span>{item.tech}</p>
                   <div className="portfolio__item-cta">
-                    <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>Lien GitHub</a>
-                    <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Demo</a>
+                    {item.gitHub ? (
+                      <div className="portfolio__item-cta-link">
+                        <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>GitHub</a>
+                        <a href={item.gitHub} className='btn btn-secondary' rel="noreferrer" target='_blank'>Lien GitHub</a>
+                      </div>
+                    ) : (
+                      <a href={item.demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Demo</a>
+                    )}
                   </div>
                 </article>) : null
             ))

@@ -2,12 +2,19 @@ import React from 'react';
 import './about.css';
 import ME from '../../assets/images/portrait1.jpg';
 // import { FaAward } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
+// import { FiUsers } from 'react-icons/fi';
 import { BsFolderCheck } from 'react-icons/bs';
-import { FaMobileAlt } from 'react-icons/fa';
+import { FaMobileAlt, FaWordpress } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
 const About = () => {
+
+  // Open link Projets Wordpress
+  const openLinkInNewWindow = () => {
+    const url = 'https://degougagence.fr/projets/';
+    window.open(url, '_blank');
+  };
+
   return (
     <section id='about'>
       <h5>Get to know</h5>
@@ -29,11 +36,11 @@ const About = () => {
 
           <div className="about__cards">
             {/* Services */}
-            <article className='about__card'>
+            {/* <article className='about__card'>
               <FiUsers className='about__icon' />
               <h5>Experience</h5>
               <small>Junior</small>
-            </article>
+            </article> */}
 
             {/* Projets */}
 
@@ -52,6 +59,14 @@ const About = () => {
                 <small>Applications Mobiles</small>
               </article>
             </Link>
+
+
+            <article className='about__card' style={{ cursor: "pointer" }} onClick={openLinkInNewWindow}>
+              <FaWordpress className='about__icon' />
+              <h5>Projets</h5>
+              <small>WordPress</small>
+            </article>
+
           </div>
 
           <a href="#contact" className='btn btn-primary'>Me contacter</a>

@@ -22,7 +22,7 @@ const Experience = () => {
       <div className="container experience__container">
         {/* FRONTEND */}
         <div className="experience__frontend">
-          <h3>Programmation Frontend</h3>
+          <h3>Front-End</h3>
 
           <div className="experience__content">
             <article className="experience__details">
@@ -87,15 +87,47 @@ const Experience = () => {
                 <h4>Material UI</h4>
               </div>
             </article>
-
           </div>
-
         </div>
 
         {/* BACKEND */}
         <div className="experience__backend">
-          <h3>Programmation Backend</h3>
+          <h3>Back-End</h3>
+          <div className="experience__content">
+            <article className="experience__details">
+              <div>
+                <FaNodeJs className='experience__details-icon' />
+                <h4>Node JS | Express JS</h4>
+              </div>
+            </article>
 
+            <article className="experience__details">
+              <div>
+                <SiMongodb className='experience__details-icon' />
+                <h4>Mongo DB</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <div>
+                <SiFirebase className='experience__details-icon' />
+                <h4>Firebase</h4>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <div>
+                <AiFillSetting className='experience__details-icon' />
+                <h4>API REST</h4>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        {/* CMS */}
+        <div className="experience__backend">
+          <h3>CMS</h3>
           <div className="experience__content">
             <article className="experience__details">
               <div>

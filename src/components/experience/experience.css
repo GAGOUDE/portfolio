@@ -4,25 +4,25 @@
     gap: 2rem;
 }
 
-.experience__container > div {
+.experience__container>div {
     background: var(--color-bg-variant);
     padding: 2rem 2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
-    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.21);
+    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.21);
 }
 
-.experience__container > div:hover {
+.experience__container>div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: pointer;
 }
 
-.experience__container > div h3 {
+.experience__container>div h3 {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--color-primary);
+    color: white;
 }
 
 .experience__content {
@@ -48,12 +48,12 @@
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
     }
 
-    .experience__container > div {
+    .experience__container>div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
@@ -69,18 +69,18 @@
 }
 
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .experience__container {
         gap: 5px;
     }
 
-    .experience__container > div {
+    .experience__container>div {
         padding: 5px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .experience__content {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 }
