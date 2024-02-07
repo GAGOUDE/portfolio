@@ -30,7 +30,7 @@ const About = () => {
         {/* Contenu */}
         <div className="about__content">
           {/* Présentation */}
-          <p>Je me suis reconverti dans le numérique suite à une découverte autodidactique. Ensuite, j'ai intégré une formation Bootcamp qui m'a permis d'obtenir le <span>Titre professionnel RNCP 6 Chef de projet d'applications Web et Mobile</span>. <br /> </p>
+          <p>Je mettrai en œuvre mes compétences et qualités au service de projets variés.<br /> J'apprécie le travail en équipe, tout en étant curieux et autonome. </p>
 
           <div className="about__cards">
             {/* Services */}
