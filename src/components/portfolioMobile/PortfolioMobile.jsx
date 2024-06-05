@@ -30,20 +30,9 @@ function PortfolioMobile() {
 
                 {/* Portfolio Catégories */}
                 <div className="portfolio__labels">
-                    {/* <a
-                        href="#category-all"
-                        active={filter === "all"}
-                        onClick={() => {
-                            setFilter("all"); setActiveCategory('#category-all')
-                        }}
-
-                        className={activeCategory === '#category-all' ? 'active-category' : ''}>
-                        All
-                    </a> */}
-
                     <a
                         href="#category-mobile"
-                        active={filter === "application mobile"}
+                        // active={filter === "application mobile"}
                         onClick={() => {
                             setFilter("application mobile"); setActiveCategory('#category-mobile')
                         }}
@@ -51,17 +40,6 @@ function PortfolioMobile() {
                     >
                         Mobile Application
                     </a>
-
-                    {/* <a
-                        href="/#category-others"
-                        active={filter === "others"}
-                        onClick={() => {
-                            setFilter("others"); setActiveCategory('#others')
-                        }}
-                        className={activeCategory === '#others' ? 'active-category' : ''}
-                    >
-                        Others
-                    </a> */}
                 </div>
 
                 {/* Portfolio Détails */}

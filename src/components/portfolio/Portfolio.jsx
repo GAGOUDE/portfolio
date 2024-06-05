@@ -17,7 +17,7 @@ function Portfolio() {
     setOpenImage({ src: imageSrc, alt: imageAlt });
   };
 
-  console.log(openImage)
+  // console.log(openImage);
 
   const handleClose = () => {
     setOpen(false);
@@ -47,20 +47,9 @@ function Portfolio() {
 
         {/* Portfolio Catégories */}
         <div className="portfolio__labels">
-          {/* <a
-            href="#category-all"
-            active={filter === "all"}
-            onClick={() => {
-              setFilter("all"); setActiveCategory('#category-all')
-            }}
-
-            className={activeCategory === '#category-all' ? 'active-category' : ''}>
-            All
-          </a> */}
-
           <a
             href="#category-web"
-            active={filter === "application web"}
+            // active={filter === "application web"}
             onClick={() => {
               setFilter("application web"); setActiveCategory('#category-web')
             }}
@@ -71,7 +60,7 @@ function Portfolio() {
 
           <a
             href="#category-landing"
-            active={filter === "landing-page"}
+            // active={filter === "landing-page"}
             onClick={() => {
               setFilter("landing-page"); setActiveCategory('#category-landing')
             }}
@@ -82,7 +71,7 @@ function Portfolio() {
 
           <a
             href="/#wordpress-projets"
-            active={filter === "wordpress-projets"}
+            // active={filter === "wordpress-projets"}
             onClick={() => {
               setFilter("wordpress-projets"); setActiveCategory('#wordpress-projets')
             }}

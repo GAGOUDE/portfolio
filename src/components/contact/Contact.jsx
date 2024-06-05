@@ -1,11 +1,14 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiOutlineWhatsApp, AiOutlineCloseCircle } from 'react-icons/ai';
 
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Modal from 'react-bootstrap/Modal';
 // import Button from 'react-bootstrap/Button';
+
+import env from 'react-dotenv';
 
 const Contact = () => {
   // Modal for confirmation de mail envoyé
@@ -13,22 +16,25 @@ const Contact = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
+
   // Form 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_66bepvt', 'template_frtljsc', form.current, 'GxJ2VCWlbP5vY_kiK')
-      .then((result) => {
-        console.log(result.text);
-        handleShow();
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs.sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current, {
+      publicKey: env.PUBLIC_KEY,
+    })
+      .then(
+        () => {
+          console.log('SUCCESS');
+          handleShow();
+        }, (error) => {
+          console.log('FAILED...', error.text);
+        });
 
-      e.target.reset();
+    e.target.reset();
   };
 
   return (
@@ -37,7 +43,7 @@ const Contact = () => {
       <h2>Contact</h2>
 
       <div className="container contact__container">
-      {/* Contact Options */}
+        {/* Contact Options */}
         <div className="contact__options">
 
           <article className="contact__option">
@@ -56,7 +62,7 @@ const Contact = () => {
 
         </div>
 
-      {/* Form */}
+        {/* Form */}
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="fullName" placeholder='Prénom et Nom' required />
           <input type="email" name="email" placeholder='Email' required />
@@ -64,7 +70,7 @@ const Contact = () => {
           <button type='submit' className='btn btn-primary'>Envoyer le message</button>
         </form>
 
-      {/* Modal */}
+        {/* Modal */}
         <Modal show={show} onHide={handleClose} className='modal_container'>
           <Modal.Body>
             <AiOutlineCloseCircle className='contact_modal_icon' onClick={handleClose} />
